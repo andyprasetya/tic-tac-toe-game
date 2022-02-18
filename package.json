@@ -1,0 +1,37 @@
+{
+  "name": "tic-tac-toe-game",
+  "version": "1.0.0",
+  "description": "A simple Tic-Tac-Toe game in HTML, CSS and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host --port 60111",
+    "build": "vite build --base=./",
+    "serve": "vite preview --host --port 60111"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyprasetya/tic-tac-toe-game.git"
+  },
+  "keywords": [
+    "tic-tac-toe"
+  ],
+  "author": "andyprasetya@aol.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andyprasetya/tic-tac-toe-game/issues"
+  },
+  "homepage": "https://github.com/andyprasetya/tic-tac-toe-game#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.4.0",
+    "autoprefixer": "^10.4.1",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.1",
+    "tailwindcss": "^3.0.16",
+    "vite": "^2.7.10"
+  },
+  "dependencies": {
+    "date-fns": "^2.23.0"
+  }
+}

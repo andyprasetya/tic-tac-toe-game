@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/images/favicon.ico" />
+    <title></title>
+  </head>
+  <body>
+    <div class="max-w-sm mx-auto mt-2 bg-white shadow-lg overflow-hidden">
+      <div class="flex flex-col">
+        <div class="mt-0">
+          <h1 class="text-center text-2xl font-extrabold">Tic Tac Toe</h1>
+        </div>
+        <div class="p-1">
+          <div class="mt-1 relative">
+            <input type="hidden" id="xscore" name="xscore" value="0"/>
+            <input type="hidden" id="oscore" name="oscore" value="0"/>
+            <input type="hidden" id="currentturn" name="currentturn" value="X"/>
+            <div class="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none bg-gray-300">
+              <span class="text-3xl font-extrabold text-red-700">X</span>
+            </div>
+            <input type="text" name="winning_score" id="winning_score" class="text-xl font-bold text-center focus:ring-0 focus:border-gray-300 block w-full border-gray-300" value="0" readonly="true"/>
+            <div class="absolute inset-y-0 right-0 px-3 flex items-center pointer-events-none bg-gray-300">
+              <span class="text-3xl font-extrabold text-blue-700">O</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-1">
+          <div class="relative p-1 flex flex-col">
+            <label for="boardsize" class="form-label">Board Size</label>
+            <input type="range" class="w-full h-6 p-0" min="3" max="9" step="3" value="3" id="boardsquaresize" name="boardsquaresize" list="tickmarks"/>
+            <datalist id="tickmarks">
+              <option value="3"></option>
+              <option value="6"></option>
+              <option value="9"></option>
+            </datalist>
+            <ul class="flex justify-between w-full px-[10px]">
+              <li class="flex justify-center relative"><span class="absolute">3</span></li>
+              <li class="flex justify-center relative"><span class="absolute">6</span></li>
+              <li class="flex justify-center relative"><span class="absolute">9</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4 pointer-events-none">
+          <p id="gamenotice" class="text-center"></p>
+        </div>
+        <div class="p-1" id="boardgamepad"></div>
+        <div class="flex flex-col px-1 mt-2">
+          <button id="restartgame" name="restartgame" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-2">RESTART GAME</button>
+          <a href="./" class="w-full text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-2">RESET ALL</a>
+          <a href="./previous-version/" class="w-full text-white bg-fuchsia-700 hover:bg-fuchsia-800 focus:ring-4 focus:ring-fuchsia-300 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-2">SWITCH TO PREVIOUS VERSION</a>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

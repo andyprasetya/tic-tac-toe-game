@@ -1,0 +1,38 @@
+@tailwind base;
+
+@tailwind components;
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./fonts/Roboto/Roboto-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(./fonts/Lato/Lato-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Akrobat-Bold';
+  src: local('Akrobat-Bold'), url(./fonts/Akrobat/Akrobat-Bold.ttf) format('ttf');
+}
+
+@tailwind utilities;
+
+/* Custom scrollbar */
+/* custom scrollbar - width */
+::-webkit-scrollbar {
+  @apply w-3;
+}
+/* custom scrollbar - Track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-300;
+}
+/* custom scrollbar - Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800;
+}
+/* custom scrollbar - Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-yellow-700;
+}
